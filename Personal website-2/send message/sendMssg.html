@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>send message</title>
+    <link rel="stylesheet" href="sendMssg.css" />
+  </head>
+  <body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <h1>Send Message for Enquiry</h1>
+      <input
+        type="hidden"
+        name="access_key"
+        value="b1cf2dd2-6c39-49ff-9ebc-a364fd9d1120"
+      />
+      <input
+        name="name"
+        type="text"
+        id="name"
+        placeholder="Your Name"
+        required
+      />
+      <input name="email" id="email" placeholder="Your Email" required />
+      <textarea
+        id="message"
+        placeholder="How can we help you"
+        rows="4"
+        name="message"
+        required
+      ></textarea>
+      <button id="submit">Send</button>
+    </form>
+
+    <script src="sendMssg.js"></script>
+  </body>
+</html>
